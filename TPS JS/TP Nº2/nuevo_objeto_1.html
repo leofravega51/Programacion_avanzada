@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina con Javascript</title>
+    <script language="javascript">
+    
+        document.write("<h1>Objetos en Javascript</h1>");
+
+        var iva = 0.21;
+
+        function Coche (marca, modelo, precio)
+        {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.precio = precio;
+        }
+
+        function calcularIva(Coche)
+        {
+            return Coche.precio * iva;
+        }
+
+        var coche1 = new Coche("Renault", "Laguna", 1800);
+        var coche2 = new Coche("Ford", "Mondeo", 2300);
+        var coche3 = new Coche("Mercedes", "600", 8500);
+        var coche4 = new Coche("Seat", "Cordoba", 3000);
+        var cadena;
+
+        cadena = "El coche " + coche1.marca + " " + coche1.modelo + " vale " + coche1.precio + " dolares y un IVA de "+ calcularIva(coche1);
+        document.write(cadena + "<br>");
+        cadena = "El coche " + coche2.marca + " " + coche2.modelo + " vale " + coche2.precio + " dolares y un IVA de "+ calcularIva(coche2);
+        document.write(cadena + "<br>");
+        cadena = "El coche " + coche3.marca + " " + coche3.modelo + " vale " + coche3.precio + " dolares y un IVA de "+ calcularIva(coche3);
+        document.write(cadena + "<br>");
+        cadena = "El coche " + coche4.marca + " " + coche4.modelo + " vale " + coche4.precio + " dolares y un IVA de "+ calcularIva(coche4);
+        document.write(cadena + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

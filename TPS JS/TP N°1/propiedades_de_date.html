@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+
+</head>
+<body>
+    <div id="tablePrint"></div>
+    <script language="javascript">
+
+        var fecha = new Date()
+        let myTable = "<table border='1px'><tr><td style='width: 100px; color: red;'>getFullYear</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getYear</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getMonth</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getDate</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getHours</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getMinutes</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getSeconds</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getMilliseconds</td>";
+        myTable += "<td style='width: 100px; color: red; text-align: center;'>getTime</td></tr>";
+        myTable += "</tr>";
+
+        myTable += "<tr><td style='width: 100px;text-align: center;'>" + fecha.getFullYear() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getYear() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getMonth() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getDate() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getMinutes() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getHours() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getSeconds() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getMilliseconds() + "</td>";
+        myTable += "<td style='width: 100px;text-align: center;'>" + fecha.getTime() + "</td>";
+        myTable += "</tr>";
+
+        myTable += "</table>";
+        document.getElementById('tablePrint').innerHTML = myTable;
+    </script>
+
+    
+    
+</body>
+</html>

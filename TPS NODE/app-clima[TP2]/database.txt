@@ -1,0 +1,1 @@
+{"Registros":[{"Localidad":"Concordia","Temperatura":295.07,"Presion":1011,"Humedad":88},{"Localidad":"Paso de los libres","Temperatura":297.15,"Presion":1011,"Humedad":78}]}
